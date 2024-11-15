@@ -1,0 +1,51 @@
+/* globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+
+body {
+    background-color: var(--background-light);
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  input, button {
+    font-family: 'Work Sans', sans-serif;
+    outline: none;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--primary);
+  }
+  
+    h1 {
+        font-size: 80px;
+      }
+
+    h2 {
+        font-size: 60px;
+      }
+
+    h3 {
+        font-size: 24px;
+      }
+
+    p {
+      font-family: 'Work Sans', sans-serif;
+      color: var(--secondary);
+    }
+  
+  .a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  .a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+  

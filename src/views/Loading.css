@@ -1,0 +1,68 @@
+/* Loading.css */
+.loading-view {
+    background-color: #FFF4F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .logo {
+    width: 136px;
+    height: 196px;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 1;  /* Make it fully visible to test */
+    transition: none;  /* Temporarily disable transition for debugging */
+    /* z-index: 10; */
+  }
+  
+  
+  .title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: 0.03em;
+    /* text-align: left; */
+    color: #EC315A;
+    margin-top: 20px;
+   
+
+    /* width: 190px; */
+    height: 80px;
+
+    }
+  
+  .subtitle {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.46px;
+    letter-spacing: 0.43em;
+    text-align: center;
+    color: #340D6D;
+    margin-top: 5px;
+  }
+  
+  .loading-view:hover .logo,
+  .loading-view.clicked .logo {
+    opacity: 1;
+  }
+  
+  @keyframes dissolve {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .loading-view.dissolve {
+    animation: dissolve 300ms ease-out 800ms forwards;
+  }
+  

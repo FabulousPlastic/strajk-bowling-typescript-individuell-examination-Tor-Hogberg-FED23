@@ -1,0 +1,19 @@
+/* Booking.css */
+
+.booking-view{
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo {
+    /* display: block; */
+    max-height: 110px;
+    margin: 20px;
+  }
+
+.header-title {
+    text-align: center;
+    margin: 0 auto;   
+  }

@@ -1,26 +1,33 @@
+// App.tsx
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Booking from './views/Booking';
+import Confirmation from './views/Confirmation';
+import Loading from './views/Loading';
+import Navbar from './components/Navbar';
 import './App.css';
+import './styles/reset.css';
 
-function App() {
+const App: React.FC = () => {
+  const location = useLocation();
+  const showNavbar = location.pathname !== '/';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      {showNavbar && <Navbar />}
+      <Routes>
+        <Route path="/" element={<Loading />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/confirmation" element={<Confirmation />} />
+      </Routes>
     </div>
   );
-}
+};
 
-export default App;
+const AppWrapper: React.FC = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;
