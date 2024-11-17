@@ -6,7 +6,6 @@ import Confirmation from './views/Confirmation';
 import Loading from './views/Loading';
 import Navbar from './components/Navbar';
 import './App.css';
-import './styles/reset.css';
 
 const App: React.FC = () => {
   const location = useLocation();

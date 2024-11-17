@@ -8,12 +8,16 @@ body {
   }
   
   button {
+    font-family: 'Work Sans', sans-serif; 
     cursor: pointer;
+    display: inline-block;
   }
   
-  input, button {
+  
+  input, button, label {
     font-family: 'Work Sans', sans-serif;
     outline: none;
+    border: none;
   }
   
   h1, h2, h3 {
@@ -42,10 +46,5 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     color: var(--primary);
     text-decoration: none;
-  }
-  
-  .a:hover {
-    color: var(--primary);
-    text-decoration: underline;
   }
   
